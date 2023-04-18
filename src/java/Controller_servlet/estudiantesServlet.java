@@ -56,9 +56,7 @@ public class estudiantesServlet extends HttpServlet {
         LocalTime horaHM = LocalTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss a");
         String horaahm = horaHM.format(formatter);
-        //Ingrese la fecha actual en formato AAAA-MM-DD:<input type="text" name="year" value=""/>
-        
-        //String year = request.getParameter("year");
+                
         String fechaNacimientoStr = request.getParameter("yearnacimiento");
         LocalDate fechaNacimiento = LocalDate.parse(fechaNacimientoStr);
         LocalDate fechaActual = LocalDate.now();
